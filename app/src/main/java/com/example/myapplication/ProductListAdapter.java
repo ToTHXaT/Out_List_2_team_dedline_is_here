@@ -42,12 +42,12 @@ public class ProductListAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View v = View.inflate(mContext, R.layout.item_product_list, null);
-        TextView tvName = (TextView)v.findViewById(R.id.tv_name);
-        TextView tvPrice = (TextView)v.findViewById(R.id.tv_price);
-        TextView tvDescription = (TextView)v.findViewById(R.id.tv_description);
+        TextView tvName = (TextView)v.findViewById(R.id.name);
+        TextView tvPrice = (TextView)v.findViewById(R.id.price);
+        TextView tvDescription = (TextView)v.findViewById(R.id.distance);
         //Set text for TextView
         tvName.setText(mProductList.get(position).getName());
-        tvPrice.setText(String.valueOf(mProductList.get(position).getPrice()) + " $");
+        tvPrice.setText(String.valueOf(mProductList.get(position).getPrice()) + " p");
         tvDescription.setText(mProductList.get(position).getDescription());
 
         //Save product id to tag

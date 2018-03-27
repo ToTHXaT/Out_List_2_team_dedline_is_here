@@ -7,12 +7,12 @@ package com.example.myapplication;
 public class Product {
     private int id;
     private String name;
-    private int price;
+    private String price;
     private String description;
 
     //Constructor
 
-    public Product(int id, String name, int price, String description) {
+    public Product(int id, String name, String price, String description) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -37,11 +37,11 @@ public class Product {
         this.name = name;
     }
 
-    public int getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
