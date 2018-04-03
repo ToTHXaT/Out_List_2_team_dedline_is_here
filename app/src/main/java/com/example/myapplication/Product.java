@@ -1,22 +1,19 @@
 package com.example.myapplication;
 
-/**
- * Created by Артур on 25.03.2018.
- */
 
 public class Product {
     private int id;
     private String name;
     private String price;
-    private String description;
+    private String distance;
 
     //Constructor
 
-    public Product(int id, String name, String price, String description) {
+    public Product(int id, String name, String price, String distance) {
         this.id = id;
         this.name = name;
         this.price = price;
-        this.description = description;
+        this.distance = distance;
     }
 
     //Setter, getter
@@ -45,11 +42,11 @@ public class Product {
         this.price = price;
     }
 
-    public String getDescription() {
-        return description;
+    public String getDistance() {
+        return distance;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDistance(String distance) {
+        this.distance = distance;
     }
 }

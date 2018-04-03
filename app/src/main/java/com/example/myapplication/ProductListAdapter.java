@@ -48,7 +48,7 @@ public class ProductListAdapter extends BaseAdapter {
         //Set text for TextView
         tvName.setText(mProductList.get(position).getName());
         tvPrice.setText(String.valueOf(mProductList.get(position).getPrice()) + " p");
-        tvDescription.setText(mProductList.get(position).getDescription());
+        tvDescription.setText(mProductList.get(position).getDistance());
 
         //Save product id to tag
         v.setTag(mProductList.get(position).getId());

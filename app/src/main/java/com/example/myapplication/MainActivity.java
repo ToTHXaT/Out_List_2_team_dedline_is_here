@@ -12,9 +12,6 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by NgocTri on 11/15/2015.
- */
 public class MainActivity extends Activity {
 
         @Override
