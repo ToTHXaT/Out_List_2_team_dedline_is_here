@@ -8,9 +8,6 @@ import android.widget.TextView;
 
 import java.util.List;
 
-/**
- * Created by Артур on 25.03.2018.
- */
 
 public class ProductListAdapter extends BaseAdapter {
 
@@ -41,7 +38,7 @@ public class ProductListAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View v = View.inflate(mContext, R.layout.item_product_list, null);
+        View v = View.inflate(mContext, R.layout.product_list_medicines, null);
         TextView tvName = (TextView)v.findViewById(R.id.name);
         TextView tvPrice = (TextView)v.findViewById(R.id.price);
         TextView tvDescription = (TextView)v.findViewById(R.id.distance);
