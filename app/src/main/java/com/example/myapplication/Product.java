@@ -5,15 +5,15 @@ public class Product {
     private int id;
     private String name;
     private String price;
-    private String distance;
+    private String Kol_vo;
 
     //Constructor
 
-    public Product(int id, String name, String price, String distance) {
+    public Product(int id, String name, String price, String Kol_vo) {
         this.id = id;
         this.name = name;
         this.price = price;
-        this.distance = distance;
+        this.Kol_vo = Kol_vo;
     }
 
     //Setter, getter
@@ -42,11 +42,11 @@ public class Product {
         this.price = price;
     }
 
-    public String getDistance() {
-        return distance;
+    public String getKol_vo() {
+        return Kol_vo;
     }
 
-    public void setDistance(String distance) {
-        this.distance = distance;
+    public void setKol_vo(String Kol_vo) {
+        this.Kol_vo = Kol_vo;
     }
 }

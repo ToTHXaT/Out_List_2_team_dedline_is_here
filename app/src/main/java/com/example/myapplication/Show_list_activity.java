@@ -28,29 +28,33 @@ public class Show_list_activity extends AppCompatActivity {
         prbr.getIndeterminateDrawable().setColorFilter(0xFF5C5CFF, android.graphics.PorterDuff.Mode.MULTIPLY);
 
         lvProduct = (ListView)findViewById(R.id.listview_product);
-
         mProductList = new ArrayList<>();
         //Add sample data for list
 
-        for (int i = 0; i < 100; i+=3)
-        {
-            mProductList.add(new Product(i , String.valueOf(i),String.valueOf(i + 1)+" bb bbbbbb", String.valueOf(i + 2)));
-        }
         //Init adapter
-        adapter = new ProductListAdapter(getApplicationContext(), mProductList);
-        lvProduct.setAdapter(adapter);
-
-
-
-
-
+//        adapter = new ProductListAdapter(getApplicationContext(), mProductList);
+//        lvProduct.setAdapter(adapter);
     }
-
-
+    int strtI = 0;
     public void onList3Click(View view){
         Intent intent = new Intent(Show_list_activity.this, FullInfoActivity.class);
         startActivity(intent);
     }
+    public void onPlus(View view){
+        //mProductList.clear();
+        //Add elements
+        //Add elements
+        //Add elements
+        //Add elements
+        //Add elements
+        //Add elements
 
 
+//        int i = strtI++;
+//        mProductList.add(new Product(i , String.valueOf(i)+"lolololololo","", String.valueOf(i + 2)));
+
+        adapter = new ProductListAdapter(getApplicationContext(), mProductList);
+        lvProduct.setAdapter(adapter);
+
+    }
 }
