@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -38,17 +39,18 @@ public class Show_list_activity extends AppCompatActivity {
         //Init adapter
         adapter = new ProductListAdapter(getApplicationContext(), mProductList);
         lvProduct.setAdapter(adapter);
-        mProductList.clear();
-        for (int i = 100; i >=0; i-=3)
-        {
-            mProductList.add(new Product(i , String.valueOf(i),String.valueOf(i + 1)+" bb bbbbbb", String.valueOf(i + 2)));
-        }
 
-        adapter = new ProductListAdapter(getApplicationContext(), mProductList);
-        lvProduct.setAdapter(adapter);
 
 
 
 
     }
+
+
+    public void onList3Click(View view){
+        Intent intent = new Intent(Show_list_activity.this, FullInfoActivity.class);
+        startActivity(intent);
+    }
+
+
 }

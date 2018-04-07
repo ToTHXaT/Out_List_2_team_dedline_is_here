@@ -41,11 +41,11 @@ public class ProductListAdapter extends BaseAdapter {
         View v = View.inflate(mContext, R.layout.product_list_medicines, null);
         TextView tvName = (TextView)v.findViewById(R.id.name);
         TextView tvPrice = (TextView)v.findViewById(R.id.price);
-        TextView tvDescription = (TextView)v.findViewById(R.id.distance);
+        TextView tvDistance = (TextView)v.findViewById(R.id.distance);
         //Set text for TextView
         tvName.setText(mProductList.get(position).getName());
         tvPrice.setText(String.valueOf(mProductList.get(position).getPrice()) + " p");
-        tvDescription.setText(mProductList.get(position).getDistance());
+        tvDistance.setText(mProductList.get(position).getDistance());
 
         //Save product id to tag
         v.setTag(mProductList.get(position).getId());
