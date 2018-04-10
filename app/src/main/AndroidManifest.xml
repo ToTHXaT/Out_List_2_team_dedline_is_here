@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Show_list_activity" />
-        <activity android:name=".FullInfoActivity"></activity>
+        <activity android:name=".FullInfoActivity" />
+        <activity android:name=".Show_list_activity_price"></activity>
     </application>
 
 </manifest>

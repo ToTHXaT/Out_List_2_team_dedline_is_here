@@ -13,7 +13,7 @@
     >
 
     <TextView
-        android:id="@+id/Id"
+        android:id="@+id/Id2"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:scrollHorizontally="false"
@@ -21,17 +21,17 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/name2"
         android:layout_width="246dp"
         android:layout_height="wrap_content"
         android:text="Name"
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/kol_vo"
+        android:id="@+id/Price2"
         android:layout_width="66dp"
         android:layout_height="wrap_content"
-        android:text="Kol_vo"
+        android:text="Price"
         android:textSize="18sp" />
 
 </LinearLayout>

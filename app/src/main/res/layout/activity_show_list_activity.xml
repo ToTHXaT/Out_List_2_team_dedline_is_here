@@ -41,7 +41,7 @@
 
             android:layout_gravity="bottom|end"
             android:layout_marginRight="50dp"
-            android:onClick="onList3Click"
+            android:onClick="onReady"
             android:text="Ready" />
 
 
